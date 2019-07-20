@@ -19,7 +19,7 @@ It has been updated to receive properly-formatted (i.e. CEF) syslog messages fro
 
 ## Run
 <pre>
-docker run --privileged -d -v /var/run/docker.sock:/var/run/docker.sock -v /var/log:/var/log -v /var/lib/docker/containers:/var/lib/docker/containers -p 514:514/tcp -p 514:514/udp --name="omsagent" -h=`hostname` --restart=always <DOCKER IMAGE>
+docker run --privileged -d -v /var/run/docker.sock:/var/run/docker.sock -v /var/log:/var/log -v /var/lib/docker/containers:/var/lib/docker/containers -p 514:514/tcp -p 514:514/udp --name="omsagent" -h=`hostname` --restart=always \<DOCKER IMAGE\>
 </pre>
 
 ## Notes
